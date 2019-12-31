@@ -1,0 +1,32 @@
+{
+    "homepage": "http://www.dandanplay.com/",
+    "description": "A local video player with danmu.",
+    "version": "10.2.0",
+    "license": "Unknown",
+    "url": "http://47.240.64.98/dandanplay_10.2.0.zip",
+    "hash": "88a3a252b74b89e947b97fa5ddcc591f41645ea13b0c84d1ca6d8ede127f6f07",
+    "installer": {
+        "script": [
+            "Move-Item \"$dir\\dandanplay\\*\" \"$dir\"",
+            "Remove-Item \"$dir\\dandanplay\""
+        ]
+    },
+    "persist": [
+        "Cache",
+        "Config",
+        "Log"
+    ],
+    "shortcuts": [
+        [
+            "dandanplay.exe",
+            "DandanPlay"
+        ]
+    ],
+    "checkver": {
+        "url": "http://www.dandanplay.com/",
+        "regex": "dandanplay_([\\d\\.]+)\\.exe"
+    },
+    "autoupdate": {
+        "url": "http://47.240.64.98/dandanplay_$version.zip"
+    }
+}
