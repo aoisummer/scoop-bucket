@@ -8,8 +8,8 @@
     "extract_to": "_tmp",
     "installer": {
         "script": [
-            'Move-Item \"$dir\\_tmp\\DDTV2.0 (Ver$version)\\*\" \"$dir\"',
-            'Remove-Item \"$dir\\_tmp\" -Recurse',
+            "Move-Item \"$dir\\_tmp\\DDTV2.0 (Ver$version)\\*\" \"$dir\"",
+            "Remove-Item \"$dir\\_tmp\" -Recurse",
             "$FILE = 'RoomListConfig.json'",
             "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
             "    New-Item \"$dir\\$FILE\" -Type File | Out-Null",
