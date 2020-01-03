@@ -1,0 +1,33 @@
+{
+    "homepage": "https://github.com/CHKZL/DDTV2",
+    "description": "",
+    "version": "2.0.1.6",
+    "license": "Unknown",
+    "url": "https://github.com/CHKZL/DDTV2/releases/download/2.0.1.6/DDTV2.0.Ver2.0.1.6.rar",
+    "hash": "6ed003315323cdc543501c9dfd757485c14cd49eaeb51565db1f5a51e0b158e2",
+    "extract_to": "_tmp",
+    "installer": {
+        "script": [
+            'Move-Item \"$dir\\_tmp\\DDTV2.0 (Ver$version)\\*\" \"$dir\"',
+            'Remove-Item \"$dir\\_tmp\" -Recurse',
+            "$FILE = 'RoomListConfig.json'",
+            "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
+            "    New-Item \"$dir\\$FILE\" -Type File | Out-Null",
+            "    Set-Content \"$dir\\$FILE\" \"{}\"",
+            "}"
+        ]
+    },
+    "persist": [
+        "RoomListConfig.json"
+    ],
+    "shortcuts": [
+        [
+            "DDTV_New.exe",
+            "DDTV2"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/CHKZL/DDTV2/releases/download/$version/DDTV2.0.Ver$version.rar"
+    }
+}
