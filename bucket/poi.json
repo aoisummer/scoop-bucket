@@ -1,16 +1,16 @@
 {
     "homepage": "https://poi.io/",
     "description": "A scalable browser and tool set for Kantai Collection.",
-    "version": "10.4.0",
+    "version": "10.5.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/poooi/poi/releases/download/v10.4.0/poi-10.4.0-win.7z",
-            "hash": "8a58fad6720b4f790842f213b23365d7e73e8ffe18511c966dee2de844dcd6f4"
+            "url": "https://github.com/poooi/poi/releases/download/v10.5.0/poi-10.5.0-win.7z",
+            "hash": "b95bee9117bf2efb460c2fc2cb0e4342665975444edc6d68f3d71d041b33becb"
         },
         "32bit": {
-            "url": "https://github.com/poooi/poi/releases/download/v10.4.0/poi-10.4.0-ia32-win.7z",
-            "hash": "d952051ded6d35fef474efee1a91b00d1b302854c572649295878ebc71060d82"
+            "url": "https://github.com/poooi/poi/releases/download/v10.5.0/poi-10.5.0-ia32-win.7z",
+            "hash": "59c4e7e1c6107e2c51e4ebfdadf93b8c16ef437b348cd0ece672a39b70e2246a"
         }
     },
     "shortcuts": [
