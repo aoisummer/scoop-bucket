@@ -1,0 +1,45 @@
+{
+    "homepage": "https://www.mozilla.org/en-US/firefox/enterprise/",
+    "description": "Extended Support Release of Firefox: the popular open source web browser.",
+    "version": "68.4.1",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/68.4.1esr/win64/zh-CN/Firefox%20Setup%2068.4.1esr.exe#/dl.7z",
+            "hash": "04e18e264e71eac0b3af4d5426e603852e72fbc76e887f37b97bf2197caffdc6"
+        },
+        "32bit": {
+            "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/68.4.1esr/win32/zh-CN/Firefox%20Setup%2068.4.1esr.exe#/dl.7z",
+            "hash": "ab54462ca406094820f3cdea59a5bd02718fd3ec7194a48024ebffb77400742c"
+        }
+    },
+    "extract_dir": "core",
+    "shortcuts": [
+        [
+            "firefox.exe",
+            "Firefox ESR Chinese Edition"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.mozilla.org/en-US/firefox/all/",
+        "re": "data-esr-versions=\"([\\d.]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/$versionesr/win64/zh-CN/Firefox%20Setup%20$versionesr.exe#/dl.7z",
+                "hash": {
+                    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/$versionesr/SHA256SUMS",
+                    "regex": "([a-fA-F0-9]{64})\\s+(?:win64/zh-CN/Firefox Setup ([\\d.]+)esr.exe)"
+                }
+            },
+            "32bit": {
+                "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/$versionesr/win32/zh-CN/Firefox%20Setup%20$versionesr.exe#/dl.7z",
+                "hash": {
+                    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/$versionesr/SHA256SUMS",
+                    "regex": "([a-fA-F0-9]{64})\\s+(?:win32/zh-CN/Firefox Setup ([\\d.]+)esr.exe)"
+                }
+            }
+        }
+    }
+}
