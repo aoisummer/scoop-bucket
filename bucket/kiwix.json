@@ -5,7 +5,7 @@
     "version": "2.0-rc4",
     "architecture": {
         "64bit": {
-            "url": "http://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64.zip",
+            "url": "https://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_2.0-rc4.zip",
             "hash": "98dff7f44987b0c5ef681a8de4185a70c2113a9690dedf187614da81a4ffbed5",
             "pre_install": [
                 "$target = \"kiwix-desktop_windows_x64_$version\"",
@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64.zip"
+                "url": "https://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_$version.zip"
             }
         }
     }
