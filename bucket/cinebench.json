@@ -1,5 +1,5 @@
 {
-    "home": "https://www.maxon.net/en/products/cinebench-r20-overview/",
+    "homepage": "https://www.maxon.net/en/products/cinebench-r20-overview/",
     "description": "A real-world cross-platform test suite that evaluates your computer's hardware capabilities.",
     "license": "Freeware",
     "version": "20.0.6.0",
