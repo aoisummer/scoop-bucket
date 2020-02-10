@@ -1,8 +1,8 @@
 {
     "homepage": "https://www.mozilla.org/en-US/firefox/enterprise/",
     "description": "Extended Support Release of Firefox: the popular open source web browser.",
-    "version": "68.4.2",
     "license": "MPL-2.0",
+    "version": "68.4.2",
     "architecture": {
         "64bit": {
             "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/68.4.2esr/win64/zh-CN/Firefox%20Setup%2068.4.2esr.exe#/dl.7z",
@@ -22,7 +22,7 @@
     ],
     "checkver": {
         "url": "https://www.mozilla.org/en-US/firefox/all/",
-        "re": "data-esr-versions=\"([\\d.]+)\""
+        "regex": "data-esr-versions=\"([\\d.]+)\""
     },
     "autoupdate": {
         "architecture": {
@@ -30,14 +30,14 @@
                 "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/$versionesr/win64/zh-CN/Firefox%20Setup%20$versionesr.exe#/dl.7z",
                 "hash": {
                     "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/$versionesr/SHA256SUMS",
-                    "regex": "([a-fA-F0-9]{64})\\s+(?:win64/zh-CN/Firefox Setup ([\\d.]+)esr.exe)"
+                    "regex": "$sha256\\s+win64/zh-CN/$basename"
                 }
             },
             "32bit": {
                 "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/$versionesr/win32/zh-CN/Firefox%20Setup%20$versionesr.exe#/dl.7z",
                 "hash": {
                     "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/$versionesr/SHA256SUMS",
-                    "regex": "([a-fA-F0-9]{64})\\s+(?:win32/zh-CN/Firefox Setup ([\\d.]+)esr.exe)"
+                    "regex": "$sha256\\s+win32/zh-CN/$basename"
                 }
             }
         }
