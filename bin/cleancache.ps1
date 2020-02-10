@@ -1,6 +1,4 @@
-
-$cacheDir = $env:SCOOP + "\\cache"
-$fileList = Get-ChildItem -Path $cacheDir
+$fileList = Get-ChildItem -Path "$($env:SCOOP)\\cache"
 $cacheList = @{}
 
 $fileList | ForEach-Object {
@@ -20,8 +18,7 @@ $fileList | ForEach-Object {
     $part = $_.Name -Split "#"
 
     if ($part.Count -eq 3 -and $part[1] -ne $cacheList[$part[0]].version) {
-        $fullname = $_.FullName
-        'Trash: ' + $_.Name | Write-Output
-        Invoke-Expression -Command 'trash "$fullname"'
+        Write-Output "Trash: $($_.Name)"
+        Invoke-Expression -Command "trash `"$($_.FullName)`""
     }
 }
