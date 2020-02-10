@@ -1,0 +1,30 @@
+{
+    "homepage": "https://github.com/cloudflare/cloudflared",
+    "description": "A tunneling daemon that proxies any local webserver through the Cloudflare network.",
+    "license": {
+        "url": "https://github.com/cloudflare/cloudflared/blob/master/LICENSE"
+    },
+    "version": "2020.2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-amd64.zip",
+            "hash": "4655a96c4ab45a43b93004581c03864aaf2ff73c0c577f59d0b0bfadd7c84b1b"
+        },
+        "32bit": {
+            "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-386.zip",
+            "hash": "299037fcc4778a23afdb93f70bf055cbbf2117658cf65ee44ef47aba75d28b28"
+        }
+    },
+    "bin": "cloudflared.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-amd64.zip"
+            },
+            "32bit": {
+                "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-386.zip"
+            }
+        }
+    }
+}
