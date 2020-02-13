@@ -1,5 +1,5 @@
 {
-    "homepage": "https://electronjs.org/",
+    "homepage": "https://www.electronjs.org/",
     "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
     "version": "8.0.0",
     "license": "MIT",
@@ -15,7 +15,9 @@
     },
     "bin": "electron.exe",
     "checkver": {
-        "github": "https://github.com/electron/electron"
+        "_github": "https://github.com/electron/electron",
+        "url": "https://www.npmjs.com/package/electron",
+        "regex": "\"latest\":\"([\\d\\.]+?)\""
     },
     "autoupdate": {
         "architecture": {
