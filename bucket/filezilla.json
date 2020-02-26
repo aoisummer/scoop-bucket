@@ -1,0 +1,50 @@
+{
+    "homepage": "https://filezilla-project.org/",
+    "description": "Fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.",
+    "license": "GPL-2.0-or-later",
+    "version": "3.47.1",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.filezilla-project.org/client/FileZilla_3.47.1_win64.zip",
+            "hash": "sha512:08e8d73992463998adb921c48ff8af9a18d8143e73c295114fcd4f22dc0daba9fd8768bb885ef919ac155192ac9418119ed87477e15e4219fed29673d2649b29"
+        },
+        "32bit": {
+            "url": "https://download.filezilla-project.org/client/FileZilla_3.47.1_win32.zip",
+            "hash": "sha512:2920dd9b244d9336d0c9a7db2a037832277b442036ac0e87b113b13c096341a605dcd8dd2e88c31e82c2dbf29a589487fa046cf00c65d832557cbd71fb89ca94"
+        }
+    },
+    "extract_dir": "FileZilla-3.47.1",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\fzdefaults.xml\")) {",
+        "    New-Item \"$dir\\fzdefaults.xml\" -Type File -Value '<?xml version=\"1.0\"?><FileZilla3><Settings><Setting name=\"Config Location\">./config</Setting></Settings></FileZilla3>' | Out-Null",
+        "}"
+    ],
+    "shortcuts": [
+        [
+            "filezilla.exe",
+            "FileZilla"
+        ]
+    ],
+    "persist": [
+        "fzdefaults.xml",
+        "config"
+    ],
+    "checkver": {
+        "url": "https://filezilla-project.org/download.php?show_all=1",
+        "regex": "The latest stable version of FileZilla Client is ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.filezilla-project.org/client/FileZilla_$version_win64.zip"
+            },
+            "32bit": {
+                "url": "https://download.filezilla-project.org/client/FileZilla_$version_win32.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/FileZilla_$version.sha512"
+        },
+        "extract_dir": "FileZilla-$version"
+    }
+}
