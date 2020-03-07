@@ -1,0 +1,52 @@
+{
+    "homepage": "https://github.com/NetchX/Netch",
+    "description": "Game accelerator. Support Socks5, Shadowsocks, ShadowsocksR, V2Ray protocol. UDP NAT FullCone",
+    "license": "MIT",
+    "version": "1.3.9",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/NetchX/Netch/releases/download/1.3.9/Netch.1.3.9.x64.zip",
+            "hash": "ba971ca95c124f768fe85b27213f58a92204791da79e0a495cbe5610b6cfe54d"
+        },
+        "32bit": {
+            "url": "https://github.com/NetchX/Netch/releases/download/1.3.9/Netch.1.3.9.x86.zip",
+            "hash": "f6620f7c107da5a379c4484a5e11cbbb96b50023a9e59c4dcff883c8b97beb66"
+        }
+    },
+    "pre_install": [
+        "foreach ($_ in Get-ChildItem -File \"$dir\\mode\") {",
+        "    if (!(Test-Path \"$persist_dir\\mode\\$($_.Name)\")) {",
+        "        Copy-Item \"$($_.FullName)\" \"$persist_dir\\mode\" | Out-Null",
+        "    }",
+        "}"
+    ],
+    "persist": [
+        "data",
+        "mode"
+    ],
+    "shortcuts": [
+        [
+            "Netch.exe",
+            "Netch"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/NetchX/Netch/releases/download/$version/Netch.$version.x64.zip",
+                "hash": {
+                    "url": "https://github.com/NetchX/Netch/releases/tag/$version",
+                    "regex": "<td align=\"left\">$basename</td>[\\r\\n]+<td align=\"left\">$sha256</td>"
+                }
+            },
+            "32bit": {
+                "url": "https://github.com/NetchX/Netch/releases/download/$version/Netch.$version.x86.zip",
+                "hash": {
+                    "url": "https://github.com/NetchX/Netch/releases/tag/$version",
+                    "regex": "<td align=\"left\">$basename</td>[\\r\\n]+<td align=\"left\">$sha256</td>"
+                }
+            }
+        }
+    }
+}
