@@ -21,7 +21,6 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.mozilla.org/en-US/firefox/all/",
         "regex": "data-esr-versions=\"([\\d.]+)\""
     },
     "autoupdate": {
