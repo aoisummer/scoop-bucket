@@ -1,23 +1,26 @@
 {
     "homepage": "https://github.com/CHKZL/DDTV2",
     "description": "Multi-channel live monitoring for bilibili and youtube.",
-    "version": "2.0.2.0",
+    "version": "2.0.2.1",
     "license": "Unknown",
-    "url": "https://github.com/CHKZL/DDTV2/releases/download/2.0.2.0/DDTV2.0.Ver2.0.2.0.rar",
-    "hash": "da43f444451f64db279e8c967566711bade3884c93337385d35fb63a4e261de7",
+    "url": "https://github.com/CHKZL/DDTV2/releases/download/2.0.2.1/DDTV-2.0.2.1.rar",
+    "hash": "c4717837f96af2ba6e878f6b4ccc1dea83c2fd79e87da0f4f0fadfa0549aef4c",
     "extract_to": "_tmp",
     "installer": {
         "script": [
-            "Move-Item \"$dir\\_tmp\\DDTV2.0 (Ver$version)\\*\" \"$dir\"",
+            "$d = Get-ChildItem -Path \"$dir\\_tmp\"",
+            "$d = Get-ChildItem -Path \"$($d[0].FullName)\"",
+            "Move-Item \"$($d[0].FullName)\\*\" \"$dir\"",
             "Remove-Item \"$dir\\_tmp\" -Recurse",
-            "$FILE = 'RoomListConfig.json'",
-            "if (!(Test-Path \"$persist_dir\\$FILE\")) {",
-            "    New-Item \"$dir\\$FILE\" -Type File | Out-Null",
-            "    Set-Content \"$dir\\$FILE\" \"{}\"",
+            "$file = 'RoomListConfig.json'",
+            "if (!(Test-Path \"$persist_dir\\$file\")) {",
+            "    New-Item \"$persist_dir\\$file\" -Type File -Value \"{}\" | Out-Null",
             "}"
         ]
     },
-    "persist": "RoomListConfig.json",
+    "persist": [
+        "RoomListConfig.json"
+    ],
     "shortcuts": [
         [
             "DDTV_New.exe",
@@ -26,6 +29,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/CHKZL/DDTV2/releases/download/$version/DDTV2.0.Ver$version.rar"
+        "url": "https://github.com/CHKZL/DDTV2/releases/download/$version/DDTV-$version.rar"
     }
 }
