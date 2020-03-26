@@ -1,16 +1,16 @@
 {
     "homepage": "https://www.electronjs.org/",
     "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
-    "version": "8.1.1",
+    "version": "8.2.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/electron/electron/releases/download/v8.1.1/electron-v8.1.1-win32-x64.zip",
-            "hash": "8086c2d7f81e3d90712c26276cd9928b04ccb306528818c7d372595ff05e4106"
+            "url": "https://github.com/electron/electron/releases/download/v8.2.0/electron-v8.2.0-win32-x64.zip",
+            "hash": "8d233c3f165c73d783fa264d16aece35188be7679be466471ec7ab4979b74c36"
         },
         "32bit": {
-            "url": "https://github.com/electron/electron/releases/download/v8.1.1/electron-v8.1.1-win32-ia32.zip",
-            "hash": "e9b324096da0351ed6f2ea1d1b0c3f638a34318853af1872927a22d9a7294063"
+            "url": "https://github.com/electron/electron/releases/download/v8.2.0/electron-v8.2.0-win32-ia32.zip",
+            "hash": "41e5108c2e9d3c334ef1a9330d566d497bf69cad47f517a49dd1554be22a9570"
         }
     },
     "bin": "electron.exe",

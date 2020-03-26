@@ -1,10 +1,10 @@
 {
     "homepage": "http://www.dandanplay.com/",
     "description": "A local video player with danmu.",
-    "version": "10.2.0",
+    "version": "10.2.1",
     "license": "Unknown",
-    "url": "http://47.240.64.98/dandanplay_10.2.0.zip",
-    "hash": "88a3a252b74b89e947b97fa5ddcc591f41645ea13b0c84d1ca6d8ede127f6f07",
+    "url": "http://47.240.64.98/dandanplay_10.2.1.zip",
+    "hash": "9583a5531bf30dea09253826b2cd1a87723e73759d8296b57eed01064a2c227f",
     "extract_dir": "dandanplay",
     "persist": [
         "Cache",
