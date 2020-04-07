@@ -1,16 +1,16 @@
 {
     "homepage": "https://www.electronjs.org/",
     "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
-    "version": "8.2.0",
+    "version": "8.2.1",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/electron/electron/releases/download/v8.2.0/electron-v8.2.0-win32-x64.zip",
-            "hash": "8d233c3f165c73d783fa264d16aece35188be7679be466471ec7ab4979b74c36"
+            "url": "https://github.com/electron/electron/releases/download/v8.2.1/electron-v8.2.1-win32-x64.zip",
+            "hash": "2d6c049172760df09bde5bf9f3e3753651b5c78fcfb7842eaf721fc790d86920"
         },
         "32bit": {
-            "url": "https://github.com/electron/electron/releases/download/v8.2.0/electron-v8.2.0-win32-ia32.zip",
-            "hash": "41e5108c2e9d3c334ef1a9330d566d497bf69cad47f517a49dd1554be22a9570"
+            "url": "https://github.com/electron/electron/releases/download/v8.2.1/electron-v8.2.1-win32-ia32.zip",
+            "hash": "d99a3f60f631bd36d22457b5bba5fd17b5490a362d65b4b5a33ac0cf27f87a90"
         }
     },
     "bin": "electron.exe",
@@ -24,13 +24,13 @@
             "64bit": {
                 "url": "https://github.com/electron/electron/releases/download/v$version/electron-v$version-win32-x64.zip",
                 "hash": {
-                    "url": "https://github.com/electron/electron/releases/download/v$version/SHASUMS256.txt"
+                    "url": "$baseurl/SHASUMS256.txt"
                 }
             },
             "32bit": {
                 "url": "https://github.com/electron/electron/releases/download/v$version/electron-v$version-win32-ia32.zip",
                 "hash": {
-                    "url": "https://github.com/electron/electron/releases/download/v$version/SHASUMS256.txt"
+                    "url": "$baseurl/SHASUMS256.txt"
                 }
             }
         }
