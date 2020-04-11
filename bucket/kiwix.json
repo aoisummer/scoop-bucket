@@ -5,21 +5,17 @@
     "version": "2.0-rc4",
     "architecture": {
         "64bit": {
-            "url": "http://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_2.0-rc4.zip",
-            "hash": "9b8b9ee85add5cd955e75296e98d63b44b100431711998dca84598185ac9ff59",
-            "pre_install": [
-                "$target = \"kiwix-desktop_windows_x64_$version\"",
-                "Move-Item \"$dir\\$target\\*\" \"$dir\"",
-                "Remove-Item -Recurse \"$dir\\$target\""
-            ],
-            "shortcuts": [
-                [
-                    "kiwix-desktop.exe",
-                    "Kiwix Desktop"
-                ]
-            ]
+            "url": "https://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_2.0-rc4.zip",
+            "hash": "8c767ff1ca7dd167b9ef6e26d5e472592ac6dd82b4f76f13c7df8211bc44afac",
+            "extract_dir": "kiwix-desktop_windows_x64_2.0-rc4"
         }
     },
+    "shortcuts": [
+        [
+            "kiwix-desktop.exe",
+            "Kiwix Desktop"
+        ]
+    ],
     "checkver": {
         "url": "https://github.com/kiwix/kiwix-desktop/releases",
         "regex": "\"/kiwix/kiwix-desktop/releases/tag/([\\w.-]+?)\""
@@ -27,7 +23,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "http://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_$version.zip"
+                "url": "https://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_$version.zip",
+                "extract_dir": "kiwix-desktop_windows_x64_$version"
             }
         }
     }
