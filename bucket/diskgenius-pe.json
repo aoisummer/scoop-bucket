@@ -2,10 +2,10 @@
     "homepage": "http://www.diskgenius.cn/",
     "description": "DiskGenius is an excellent utility that comes packed with various useful features on data recovery, disk partition management, backup & restore.",
     "##": "Single file for Windows PE version, use 32bit only.",
-    "version": "5.2.0.884",
+    "version": "5.2.1.941",
     "license": "Unknown",
-    "url": "http://download.eassos.cn/DGLite520884_x86.zip",
-    "hash": "adae582efc57795eb4b38a586c16fefe6bc1a90e20ccd4dcfba0f0109088b5e6",
+    "url": "http://download.eassos.cn/DGLite521941_x86.zip",
+    "hash": "5f329c82a366c60e218b728afcbcb61c198eabff8b0e2b0897fd1b88ccefaf14",
     "shortcuts": [
         [
             "DiskGenius.exe",
