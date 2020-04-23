@@ -2,15 +2,15 @@
     "homepage": "https://github.com/NetchX/Netch",
     "description": "Game accelerator. Support Socks5, Shadowsocks, ShadowsocksR, V2Ray protocol. UDP NAT FullCone",
     "license": "MIT",
-    "version": "1.4.1",
+    "version": "1.4.2",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NetchX/Netch/releases/download/v1.4.1/Netch.x64-v1.4.1.zip",
-            "hash": "ebd2497e043b834b13c74df5dcc1277f74620ea26bfdd4dabb6447aa44587389"
+            "url": "https://github.com/NetchX/Netch/releases/download/1.4.2/Netch.x64-1.4.2.zip",
+            "hash": "407a3c49c1bd53bc7a0abe8097893b3be5a5510dc77700121b8ec0708f1a6d1a"
         },
         "32bit": {
-            "url": "https://github.com/NetchX/Netch/releases/download/v1.4.1/Netch.x86-v1.4.1.zip",
-            "hash": "4f5fbc57adea78e645f117904425aa4fb0f5b019fcefb9d50325e71ea60f0dbb"
+            "url": "https://github.com/NetchX/Netch/releases/download/1.4.2/Netch.x86-1.4.2.zip",
+            "hash": "adb752419e57af6781c23749417dfedfa5286df6814d0717e597e9fe2e766ce6"
         }
     },
     "pre_install": [
@@ -18,7 +18,8 @@
         "    if (!(Test-Path \"$persist_dir\\mode\\$($_.Name)\")) {",
         "        Copy-Item \"$($_.FullName)\" \"$persist_dir\\mode\" | Out-Null",
         "    }",
-        "}"
+        "}",
+        "Rename-Item -Path \"$dir\\mode\" -NewName \"$dir\\mode.original\""
     ],
     "persist": [
         "data",
@@ -34,19 +35,15 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/NetchX/Netch/releases/download/v$version/Netch.x64-v$version.zip",
-                "hash": {
-                    "url": "https://github.com/NetchX/Netch/releases/tag/v$version",
-                    "regex": "<td align=\"left\"><sub>$basename</sub></td>[\\r\\n]+<td align=\"left\"><sub>$sha256</sub></td>"
-                }
+                "url": "https://github.com/NetchX/Netch/releases/download/$version/Netch.x64-$version.zip"
             },
             "32bit": {
-                "url": "https://github.com/NetchX/Netch/releases/download/v$version/Netch.x86-v$version.zip",
-                "hash": {
-                    "url": "https://github.com/NetchX/Netch/releases/tag/v$version",
-                    "regex": "<td align=\"left\"><sub>$basename</sub></td>[\\r\\n]+<td align=\"left\"><sub>$sha256</sub></td>"
-                }
+                "url": "https://github.com/NetchX/Netch/releases/download/$version/Netch.x86-$version.zip"
             }
+        },
+        "hash": {
+            "url": "https://github.com/NetchX/Netch/releases/tag/$version",
+            "regex": "<td align=\"left\"><sub>$basename</sub></td>[\\r\\n]+<td align=\"left\"><sub>$sha256</sub></td>"
         }
     }
 }

@@ -22,17 +22,14 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/electron/electron/releases/download/v$version/electron-v$version-win32-x64.zip",
-                "hash": {
-                    "url": "$baseurl/SHASUMS256.txt"
-                }
+                "url": "https://github.com/electron/electron/releases/download/v$version/electron-v$version-win32-x64.zip"
             },
             "32bit": {
-                "url": "https://github.com/electron/electron/releases/download/v$version/electron-v$version-win32-ia32.zip",
-                "hash": {
-                    "url": "$baseurl/SHASUMS256.txt"
-                }
+                "url": "https://github.com/electron/electron/releases/download/v$version/electron-v$version-win32-ia32.zip"
             }
+        },
+        "hash": {
+            "url": "$baseurl/SHASUMS256.txt"
         }
     }
 }
