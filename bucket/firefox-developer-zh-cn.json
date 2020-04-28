@@ -2,15 +2,15 @@
     "homepage": "https://www.mozilla.org/zh-CN/firefox/developer/",
     "description": "Developer builds of Firefox: the popular open source web browser.",
     "license": "MPL-2.0",
-    "version": "76.0b7",
+    "version": "76.0b8",
     "architecture": {
         "64bit": {
-            "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/76.0b7/win64/zh-CN/Firefox%20Setup%2076.0b7.exe#/dl.7z",
-            "hash": "9dbd939bb3a182ffca151b20f50b7c8fc6a31a3bb7d7d23ad3cdf4bf9a17878c"
+            "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/76.0b8/win64/zh-CN/Firefox%20Setup%2076.0b8.exe#/dl.7z",
+            "hash": "07d90267836b73b6a1bb4f7a8cecfd5aa5391cb1b6ff88fc96f5d6e204bb4027"
         },
         "32bit": {
-            "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/76.0b7/win32/zh-CN/Firefox%20Setup%2076.0b7.exe#/dl.7z",
-            "hash": "561a0514a125ed50e7168ec8179d0163ff885073890d0214b5db5a2bc8400396"
+            "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/76.0b8/win32/zh-CN/Firefox%20Setup%2076.0b8.exe#/dl.7z",
+            "hash": "714f9e6cea83112ea93f4595aa6e0a5b2357cae9e2a428f3c1f8da380bb5a1bd"
         }
     },
     "extract_dir": "core",
