@@ -1,15 +1,14 @@
 {
     "homepage": "https://github.com/CHKZL/DDTV2",
     "description": "Multi-channel live monitoring for bilibili and youtube.",
-    "version": "2.0.2.1",
+    "version": "2.0.2.1d",
     "license": "Unknown",
-    "url": "https://github.com/CHKZL/DDTV2/releases/download/2.0.2.1/DDTV-2.0.2.1.rar",
-    "hash": "c4717837f96af2ba6e878f6b4ccc1dea83c2fd79e87da0f4f0fadfa0549aef4c",
+    "url": "https://github.com/CHKZL/DDTV2/releases/download/2.0.2.1d/DDTV-2.0.2.1d.rar",
+    "hash": "0fed358a64cdb0468e00f269628a91e448621c51ccc7b0630e9cc59342d9b6c5",
     "extract_to": "_tmp",
     "installer": {
         "script": [
             "$d = Get-ChildItem -Path \"$dir\\_tmp\"",
-            "$d = Get-ChildItem -Path \"$($d[0].FullName)\"",
             "Move-Item \"$($d[0].FullName)\\*\" \"$dir\"",
             "Remove-Item \"$dir\\_tmp\" -Recurse",
             "$file = 'RoomListConfig.json'",
@@ -18,17 +17,18 @@
             "}"
         ]
     },
-    "persist": [
-        "RoomListConfig.json"
-    ],
+    "persist": "RoomListConfig.json",
     "shortcuts": [
         [
             "DDTV_New.exe",
             "DDTV2"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://github.com/CHKZL/DDTV2/releases/latest",
+        "regex": "/releases/tag/Ver([\\w\\.]+)"
+    },
     "autoupdate": {
-        "url": "https://github.com/CHKZL/DDTV2/releases/download/$version/DDTV-$version.rar"
+        "url": "https://github.com/CHKZL/DDTV2/releases/download/Ver$version/DDTV-$version.rar"
     }
 }
