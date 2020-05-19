@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/CHKZL/DDTV2",
     "description": "Multi-channel live monitoring for bilibili and youtube.",
-    "version": "2.0.2.3b",
+    "version": "2.0.2.4a",
     "license": "Unknown",
-    "url": "https://github.com/CHKZL/DDTV2/releases/download/Ver2.0.2.3b/DDTV-2.0.2.3b.rar",
-    "hash": "5bcc72c3a7172b27348360a8720e693b25310b69ad786bc701b2fcf4579013b6",
+    "url": "https://github.com/CHKZL/DDTV2/releases/download/Ver2.0.2.4a/DDTV-2.0.2.4a.rar",
+    "hash": "bf18659cb26ed3650d0066cd7233a5c4d79a6a2343a4cffc2e35ec7a84853c9f",
     "extract_to": "_tmp",
     "installer": {
         "script": [

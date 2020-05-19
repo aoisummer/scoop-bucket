@@ -2,15 +2,15 @@
     "homepage": "https://www.snapraid.it/",
     "description": "A backup program for disk arrays. It stores parity information of your data and it recovers from up to six disk failures",
     "license": "GPL-3.0-only",
-    "version": "11.3",
+    "version": "11.4",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/amadvance/snapraid/releases/download/v11.3/snapraid-11.3-windows-x64.zip",
-            "hash": "b764a3341783d4694242412e0fca7c112e44e84a4a89a7c27b0f74a836a84baf"
+            "url": "https://github.com/amadvance/snapraid/releases/download/v11.4/snapraid-11.4-windows-x64.zip",
+            "hash": "75e563a97bdf063719a06eaa75abeb590386fb4112fc814be52effbd17f126be"
         },
         "32bit": {
-            "url": "https://github.com/amadvance/snapraid/releases/download/v11.3/snapraid-11.3-windows-x86.zip",
-            "hash": "f8e51bee80ae0223f402afe68f5192f1036434bab816c42333bf2e5f9fbc82a2"
+            "url": "https://github.com/amadvance/snapraid/releases/download/v11.4/snapraid-11.4-windows-x86.zip",
+            "hash": "87dada177e82a02c8f1e7057350276b2f2b2d9a41d9af2bf30d106efdf19813d"
         }
     },
     "bin": "snapraid.exe",
