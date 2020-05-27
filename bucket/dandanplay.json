@@ -1,10 +1,10 @@
 {
     "homepage": "http://www.dandanplay.com/",
     "description": "A local video player with danmu.",
-    "version": "10.4.0",
+    "version": "10.4.1",
     "license": "Unknown",
-    "url": "http://47.240.64.98/dandanplay_10.4.0.zip",
-    "hash": "da3c708aded3359b840bed507cf2544dc816c8908b02b7ebb291722bae91a4b8",
+    "url": "https://dandan.sakurateam.top/dandanplay_10.4.1.zip",
+    "hash": "88eb96b3f5ec8391fc972aea4df0fd3c8e65666fc2f23da608a266d444a05843",
     "extract_dir": "dandanplay",
     "persist": [
         "Cache",
@@ -22,6 +22,6 @@
         "regex": "dandanplay_([\\d\\.]+)\\.exe"
     },
     "autoupdate": {
-        "url": "http://47.240.64.98/dandanplay_$version.zip"
+        "url": "https://dandan.sakurateam.top/dandanplay_$version.zip"
     }
 }
