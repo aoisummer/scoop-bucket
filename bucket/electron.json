@@ -15,9 +15,8 @@
     },
     "bin": "electron.exe",
     "checkver": {
-        "_github": "https://github.com/electron/electron",
-        "url": "https://www.npmjs.com/package/electron",
-        "regex": "\"latest\":\"([\\d\\.]+?)\""
+        "url": "https://cdn.jsdelivr.net/npm/electron/",
+        "regex": "<h2>\\s+electron@([\\d\\.]+)"
     },
     "autoupdate": {
         "architecture": {
