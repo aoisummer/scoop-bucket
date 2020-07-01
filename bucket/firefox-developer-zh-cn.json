@@ -2,15 +2,15 @@
     "homepage": "https://www.mozilla.org/zh-CN/firefox/developer/",
     "description": "Developer builds of Firefox: the popular open source web browser.",
     "license": "MPL-2.0",
-    "version": "78.0b9",
+    "version": "79.0b2",
     "architecture": {
         "64bit": {
-            "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/78.0b9/win64/zh-CN/Firefox%20Setup%2078.0b9.exe#/dl.7z",
-            "hash": "af877566419b2fe75dc2bc95568f3806df3aca7480bbf65ec5629f657b6db751"
+            "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/79.0b2/win64/zh-CN/Firefox%20Setup%2079.0b2.exe#/dl.7z",
+            "hash": "a2fa9d1979901c38c86846986d2b4d23fa092d67466fa979317dc6c514a345c4"
         },
         "32bit": {
-            "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/78.0b9/win32/zh-CN/Firefox%20Setup%2078.0b9.exe#/dl.7z",
-            "hash": "c08c5ee667c720f0176d0dd01a6fc4fd6516808004e4afb2d32932b7329eafd3"
+            "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/79.0b2/win32/zh-CN/Firefox%20Setup%2079.0b2.exe#/dl.7z",
+            "hash": "0ba9e1eb86a3aaafc977861698c529801abe041a0fba9ccb220e8285c24d8011"
         }
     },
     "extract_dir": "core",
@@ -31,14 +31,14 @@
                 "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/$version/win64/zh-CN/Firefox%20Setup%20$version.exe#/dl.7z",
                 "hash": {
                     "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/$version/SHA256SUMS",
-                    "regex": "$sha256\\s+win64/zh-CN/$basename"
+                    "regex": "$sha256'\\s+win64/zh-CN/$basename"
                 }
             },
             "32bit": {
                 "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/$version/win32/zh-CN/Firefox%20Setup%20$version.exe#/dl.7z",
                 "hash": {
                     "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/$version/SHA256SUMS",
-                    "regex": "$sha256\\s+win32/zh-CN/$basename"
+                    "regex": "$sha256'\\s+win32/zh-CN/$basename"
                 }
             }
         }
