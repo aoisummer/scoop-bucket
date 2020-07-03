@@ -2,12 +2,12 @@
     "homepage": "https://www.kiwix.org/",
     "description": "An offline reader for online content like Wikipedia, Project Gutenberg, or TED Talks.",
     "license": "GPL-3.0-or-later",
-    "version": "2.0.2",
+    "version": "2.0.3",
     "architecture": {
         "64bit": {
-            "url": "https://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_2.0.2.zip",
-            "hash": "78a24a9dd419855226544b9aeadb684310b71efe14649494c29248eaebac8709",
-            "extract_dir": "kiwix-desktop_windows_x64_2.0.2"
+            "url": "https://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_2.0.3.zip",
+            "hash": "8ee91dbc13d09079e7cb85f3c8d4bda212d6cfa64cb1b3375955bbd32ef6da37",
+            "extract_dir": "kiwix-desktop_windows_x64_2.0.3"
         }
     },
     "shortcuts": [
@@ -26,6 +26,10 @@
                 "url": "https://download.kiwix.org/release/kiwix-desktop/kiwix-desktop_windows_x64_$version.zip",
                 "extract_dir": "kiwix-desktop_windows_x64_$version"
             }
+        },
+        "_hash": {
+            "url": "$url.meta4",
+            "xpath": "/metalink/file/hash[type=\"sha-256\"]"
         }
     }
 }
