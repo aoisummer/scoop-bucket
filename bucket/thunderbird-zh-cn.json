@@ -2,15 +2,15 @@
     "homepage": "https://www.thunderbird.net/",
     "description": "A free email application that's easy to set up and customize.",
     "license": "MPL-2.0",
-    "version": "78.1.0",
+    "version": "78.1.1",
     "architecture": {
         "64bit": {
-            "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/78.1.0/win64/zh-CN/Thunderbird%20Setup%2078.1.0.exe#/dl.7z",
-            "hash": "e1344fa0638a340f555c34329605ee1d5f55efa0e9214f17b61dcf2fc579e36d"
+            "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/78.1.1/win64/zh-CN/Thunderbird%20Setup%2078.1.1.exe#/dl.7z",
+            "hash": "f02993f6144c2b90f5c1269abfad856677ff741f894031d63dc5bfa9b5979758"
         },
         "32bit": {
-            "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/78.1.0/win32/zh-CN/Thunderbird%20Setup%2078.1.0.exe#/dl.7z",
-            "hash": "1737b9c9f61e670ebdc35155c78847bc6ce784b55468c6d7aed5a7d8766467b3"
+            "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/78.1.1/win32/zh-CN/Thunderbird%20Setup%2078.1.1.exe#/dl.7z",
+            "hash": "a001037535cb961f9bc6acdd2a3827dfb6aef4958de751e46191c8a6b07ce695"
         }
     },
     "extract_dir": "core",
