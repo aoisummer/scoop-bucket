@@ -4,15 +4,15 @@
     "license": {
         "url": "https://github.com/cloudflare/cloudflared/blob/master/LICENSE"
     },
-    "version": "2020.8.0",
+    "version": "2020.8.2",
     "architecture": {
         "64bit": {
             "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-amd64.zip",
-            "hash": "ca572a3edc4e8e4c9d836d44f98986cfda95c48bb0964b4a173bb078f687884a"
+            "hash": "ced1d9abd31eb0994cd208ba2897706d01debb047fbe123a0db213223f5921b2"
         },
         "32bit": {
             "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-386.zip",
-            "hash": "f9d9c1063726d153de2363c9c348a037ffbca5475810d10d9803a4915ebb0074"
+            "hash": "95fc75fa801c58b8abb2f307e6b72c9158b22f1d495d16540d33936f770fa421"
         }
     },
     "bin": "cloudflared.exe",
