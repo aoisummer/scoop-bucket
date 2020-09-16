@@ -1,16 +1,16 @@
 {
     "homepage": "https://www.electronjs.org/",
     "description": "Build cross-platform desktop apps with JavaScript, HTML, and CSS",
-    "version": "10.1.1",
+    "version": "10.1.2",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://npm.taobao.org/mirrors/electron/10.1.1/electron-v10.1.1-win32-x64.zip",
-            "hash": "8b8171514d53b2edc9a79a2094fb150b1ccb6ad363eb41ecdee8ce4a68907b06"
+            "url": "https://npm.taobao.org/mirrors/electron/10.1.2/electron-v10.1.2-win32-x64.zip",
+            "hash": "2d3ce551e9da4ffb11401b7a2c4702f137c761cd5eb2db63dad69692a6eb86e1"
         },
         "32bit": {
-            "url": "https://npm.taobao.org/mirrors/electron/10.1.1/electron-v10.1.1-win32-ia32.zip",
-            "hash": "79d76181518e9ddd7a242f91b63eb14ea821215b596fce75164bf26000bc9837"
+            "url": "https://npm.taobao.org/mirrors/electron/10.1.2/electron-v10.1.2-win32-ia32.zip",
+            "hash": "b5b576f3a60e2ce037c07776d5755cd441aad2ccc2c97be748e3809e07ab392b"
         }
     },
     "bin": "electron.exe",
