@@ -2,9 +2,9 @@
     "homepage": "https://crystalmark.info/ja/software/crystaldiskinfo/",
     "description": "CrystalDiskInfo is a HDD/SSD utility software which supports S.M.A.R.T and a part of USB-HDD.",
     "license": "MIT",
-    "version": "8.8.6",
-    "url": "https://osdn.net/frs/redir.php?m=auto&f=crystaldiskinfo%2F73507%2FCrystalDiskInfo8_8_6KureiKei.zip#/dl.zip",
-    "hash": "f8429826e8d3909c644fb55666a5f4828b661e05e9d32f5e21961cce4ac79313",
+    "version": "8.8.7",
+    "url": "https://osdn.net/frs/redir.php?m=auto&f=crystaldiskinfo%2F73507%2FCrystalDiskInfo8_8_7KureiKei.zip#/dl.zip",
+    "hash": "b57db52012a2e6c42eab8e5c5535fc8a4e8f04ad1d7d3af256d3d2f3276fc480",
     "architecture": {
         "64bit": {
             "shortcuts": [
