@@ -4,26 +4,37 @@
     "license": {
         "url": "https://github.com/cloudflare/cloudflared/blob/master/LICENSE"
     },
-    "version": "2020.9.1",
+    "version": "2020.9.3",
     "architecture": {
         "64bit": {
-            "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-amd64.zip",
-            "hash": "caa1b9acff799ff76746b8453fbd65715354808706c5e9e7eee0beb787100dcc"
+            "url": "https://github.com/cloudflare/cloudflared/releases/download/2020.9.3/cloudflared-windows-amd64.exe",
+            "hash": "96e468f06660750a2ee757276b32e02ac3ed4ff01e02e13d5e192b421890d61d",
+            "bin": [
+                [
+                    "cloudflared-windows-amd64.exe",
+                    "cloudflared"
+                ]
+            ]
         },
         "32bit": {
-            "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-386.zip",
-            "hash": "53909f74bd1abc0fe005e939423d4178bd863b6bca15095b293c3cf76f9188a7"
+            "url": "https://github.com/cloudflare/cloudflared/releases/download/2020.9.3/cloudflared-windows-386.exe",
+            "hash": "3cd6663cca289263b3e0485fbc08ee5ccd2494a37ea2b36af2db6bbe36146067",
+            "bin": [
+                [
+                    "cloudflared-windows-386.exe",
+                    "cloudflared"
+                ]
+            ]
         }
     },
-    "bin": "cloudflared.exe",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-amd64.zip"
+                "url": "https://github.com/cloudflare/cloudflared/releases/download/$version/cloudflared-windows-amd64.exe"
             },
             "32bit": {
-                "url": "https://bin.equinox.io/c/VdrWdbjqyF/cloudflared-stable-windows-386.zip"
+                "url": "https://github.com/cloudflare/cloudflared/releases/download/$version/cloudflared-windows-386.exe"
             }
         }
     }
