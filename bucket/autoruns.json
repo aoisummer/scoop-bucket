@@ -5,9 +5,9 @@
         "identifier": "Unknown",
         "url": "https://docs.microsoft.com/en-us/sysinternals/license-terms"
     },
-    "version": "14.03",
+    "version": "14.05",
     "url": "https://download.sysinternals.com/files/Autoruns.zip",
-    "hash": "b6031327c8a19ddb04a7994eb5555455f79dfe19881b2b7cf4ea1e6810321643",
+    "hash": "66daebb425206153727ab44fd47f099a0141a549cbb9aa12a2a2491454293f2c",
     "architecture": {
         "32bit": {
             "shortcuts": [
