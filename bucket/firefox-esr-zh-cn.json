@@ -2,15 +2,15 @@
     "homepage": "https://www.mozilla.org/en-US/firefox/enterprise/",
     "description": "Extended Support Release of Firefox: the popular open source web browser.",
     "license": "MPL-2.0",
-    "version": "91.3.0",
+    "version": "91.4.0",
     "architecture": {
         "64bit": {
-            "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/91.3.0esr/win64/zh-CN/Firefox%20Setup%2091.3.0esr.exe#/dl.7z",
-            "hash": "d2d84e9b75cf955952d5a3b7c5e00514e252340b23304bcdc5b09ea9450b5120"
+            "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/91.4.0esr/win64/zh-CN/Firefox%20Setup%2091.4.0esr.exe#/dl.7z",
+            "hash": "74e0394d67e297bdb7eb3b4a3d4e9dc453aca41e98d1668ab58b9950ca3cebfb"
         },
         "32bit": {
-            "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/91.3.0esr/win32/zh-CN/Firefox%20Setup%2091.3.0esr.exe#/dl.7z",
-            "hash": "a9f3ccb57577efd0bcdb92793f6e5192395aa58cf7569cbd80d32bb4da26003b"
+            "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/91.4.0esr/win32/zh-CN/Firefox%20Setup%2091.4.0esr.exe#/dl.7z",
+            "hash": "707ac5e4ac2520374e676e609d9d7ae608bd1ea6f8d1aa36e00b7ce08de11f09"
         }
     },
     "extract_dir": "core",
