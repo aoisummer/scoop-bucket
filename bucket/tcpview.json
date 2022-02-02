@@ -5,9 +5,9 @@
         "identifier": "Unknown",
         "url": "https://docs.microsoft.com/en-us/sysinternals/license-terms"
     },
-    "version": "4.16",
+    "version": "4.17",
     "url": "https://download.sysinternals.com/files/TCPView.zip",
-    "hash": "9439d5dc247ebe74b3ae081e0f19a12b12f32ef7a6baf9b03256a01bb8721103",
+    "hash": "ad37bb52a44f8fec24368ba99577a781c69d7a8eb85d0da97b5559d93a3f0c87",
     "shortcuts": [
         [
             "Tcpview.exe",
