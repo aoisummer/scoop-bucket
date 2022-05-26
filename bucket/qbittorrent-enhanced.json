@@ -2,15 +2,15 @@
     "homepage": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
     "description": "qBittorrent BitTorrent client with anti-leech enhancement.",
     "license": "GPL-2.0-only",
-    "version": "4.4.2.10",
+    "version": "4.4.3.11",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.2.10/qbittorrent_enhanced_4.4.2.10_Qt5_x64_setup.exe#/dl.7z",
-            "hash": "6b10334dd4889582dc6963aecf27f97a48ba028bc61d8118e060e9b08db9015f"
+            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.3.11/qbittorrent_enhanced_4.4.3.11_x64_setup.exe#/dl.7z",
+            "hash": "89e07415c854193c067d7d45650627612091e2c6584a2a0f6f95e626e9fe80e3"
         },
         "32bit": {
-            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.2.10/qbittorrent_enhanced_4.4.2.10_setup.exe#/dl.7z",
-            "hash": "5464423268ffeded3f1ef3346f8bf3960db7ab4b141d5eb01e60faf38db4be9e"
+            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.4.3.11/qbittorrent_enhanced_4.4.3.11_setup.exe#/dl.7z",
+            "hash": "eb82f0faa0c1763f7687da861ed95e58e00da63c046a80ec34e47584a583f154"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Recurse",
@@ -28,7 +28,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_enhanced_$version_Qt5_x64_setup.exe#/dl.7z"
+                "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_enhanced_$version_x64_setup.exe#/dl.7z"
             },
             "32bit": {
                 "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_enhanced_$version_setup.exe#/dl.7z"
