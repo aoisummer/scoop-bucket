@@ -2,16 +2,16 @@
     "homepage": "https://github.com/HIllya51/LunaTranslator",
     "description": "Galgame translator",
     "license": "GPL-3.0",
-    "version": "10.15.6.27",
+    "version": "10.15.6.28",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v10.15.6.27/LunaTranslator_x64_win7.zip",
-            "hash": "552cc572e06d5a0a48aa4e5809456a2217d801b9b3a75d2f88a29e7a17c0780c",
+            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v10.15.6.28/LunaTranslator_x64_win7.zip",
+            "hash": "80842ecd76dbaf4e245eb18180facaac7bd9c470f7fd18b1ead05679e59dcaf1",
             "extract_dir": "LunaTranslator_x64_win7"
         },
         "32bit": {
-            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v10.15.6.27/LunaTranslator_x86_win7.zip",
-            "hash": "566def02a614e99bc80d77c647fd1d891a3759c310ad82c023dabc7fec335c5f",
+            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v10.15.6.28/LunaTranslator_x86_win7.zip",
+            "hash": "858536207a579dc0e4097aa6828b05c813a754b9fc53e7477c6c6585c4520502",
             "extract_dir": "LunaTranslator_x86_win7"
         }
     },
