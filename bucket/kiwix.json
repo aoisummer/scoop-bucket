@@ -17,7 +17,7 @@
     ],
     "checkver": {
         "url": "https://download.kiwix.org/release/kiwix-desktop/feed.xml",
-        "regex": "kiwix-desktop_windows_x64_(?<version>[\\d.-]+).zip"
+        "regex": "[\\s\\S]+kiwix-desktop_windows_x64_(?<version>[\\d.-]+).zip"
     },
     "autoupdate": {
         "architecture": {
