@@ -2,11 +2,11 @@
     "homepage": "https://github.com/HIllya51/LunaTranslator",
     "description": "Galgame translator",
     "license": "GPL-3.0",
-    "version": "12.1.2.7",
+    "version": "12.1.2.8",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v12.1.2.7/LunaTranslator_x64.zip",
-            "hash": "4a7753320c3bf4ac43e770b0055d2804a9765bcf6be8830795f34e9614ed8936",
+            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v12.1.2.8/LunaTranslator_x64.zip",
+            "hash": "598723f07dd8aa8d75690d639d7a9de5a52db7ef5a32b1a6469ac71b905f55ce",
             "extract_dir": "LunaTranslator_x64"
         }
     },
