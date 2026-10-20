@@ -1,4 +1,5 @@
-$fileList = Get-ChildItem -Path "$($env:SCOOP)\\cache"
+$scoopDir = (Get-Command scoop).Source | Split-Path | Split-Path
+$fileList = Get-ChildItem -Path "$scoopDir\\cache"
 $cacheList = @{}
 
 $fileList | ForEach-Object {
